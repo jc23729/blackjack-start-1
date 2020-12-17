@@ -23,7 +23,15 @@
 #   https://games.washingtonpost.com/games/blackjack/
 #Then try out the completed Blackjack project here: 
 #   http://blackjack-final.appbrewery.repl.run
+import random
+from replit import clear
+from art import logo
 
+def deal_card():
+  """Returns a random card from the deck."""
+  cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+  card = random.choice(cards)
+  return card
 #Hint 2: Read this breakdown of program requirements: 
 #   http://listmoz.com/view/6h34DJpvJBFVRlZfJvxF
 #Then try to create your own flowchart for the program.
